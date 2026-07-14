@@ -1,0 +1,23 @@
+{
+    "name": "@repo/common",
+    "version": "1.0.0",
+    "type": "module",
+    "private": true,
+    "main": "./src/config/index.ts",
+    "types": "./src/config/index.ts",
+    "exports": {
+        "./config": {
+            "types": "./src/config/index.ts",
+            "import": "./src/config/index.ts"
+        }
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*"
+    },
+    "dependencies": {
+        "zod": "^4.4.3"
+    }
+}

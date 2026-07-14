@@ -1,0 +1,30 @@
+{
+  "name": "ws-backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch ./src/index.ts",
+    "build": "tsc -b",
+    "start": "bun run ./dist/index.ts"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@repo/backend-common": "workspace:*",
+    "@types/ws": "^8.18.1",
+    "ws": "^8.21.0"
+  },
+  "turbo": {
+    "tasks": {
+      "build": {
+        "inputs": ["$TURBO_DEFAULT$", ".env.production"]
+      }
+    }
+  }
+}
