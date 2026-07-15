@@ -15,11 +15,12 @@
       "name": "http-backend",
       "version": "1.0.0",
       "dependencies": {
-        "@repo/backend-common": "workspace:*",
         "cors": "^2.8.5",
         "express": "^5.0.0",
       },
       "devDependencies": {
+        "@repo/backend-common": "workspace:*",
+        "@repo/common": "workspace:*",
         "@repo/typescript-config": "workspace:*",
         "@types/bun": "latest",
         "@types/cors": "^2.8.19",
@@ -39,6 +40,7 @@
         "react-dom": "^19.2.0",
       },
       "devDependencies": {
+        "@repo/common": "*",
         "@repo/eslint-config": "*",
         "@repo/typescript-config": "*",
         "@types/node": "^22.15.3",
@@ -51,13 +53,14 @@
     "apps/ws-backend": {
       "name": "ws-backend",
       "dependencies": {
-        "@repo/backend-common": "workspace:*",
-        "@types/ws": "^8.18.1",
         "ws": "^8.21.0",
       },
       "devDependencies": {
+        "@repo/backend-common": "workspace:*",
+        "@repo/common": "workspace:*",
         "@repo/typescript-config": "*",
         "@types/bun": "latest",
+        "@types/ws": "^8.18.1",
       },
       "peerDependencies": {
         "typescript": "^5",

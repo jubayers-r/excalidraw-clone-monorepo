@@ -1,5 +1,5 @@
 {
-  "name": "excalidraw-clone",
+  "name": "excalidraw-clone-monorepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",

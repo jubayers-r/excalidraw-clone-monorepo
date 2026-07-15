@@ -10,20 +10,24 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "*",
-    "@types/bun": "latest"
+    "@repo/backend-common": "workspace:*",
+    "@repo/common": "workspace:*",
+    "@types/bun": "latest",
+    "@types/ws": "^8.18.1"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "@repo/backend-common": "workspace:*",
-    "@types/ws": "^8.18.1",
     "ws": "^8.21.0"
   },
   "turbo": {
     "tasks": {
       "build": {
-        "inputs": ["$TURBO_DEFAULT$", ".env.production"]
+        "inputs": [
+          "$TURBO_DEFAULT$",
+          ".env.production"
+        ]
       }
     }
   }

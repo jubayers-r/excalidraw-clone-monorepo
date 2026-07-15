@@ -23,13 +23,21 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "eslint": "^9.39.1",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "@repo/common": "*"
   },
   "turbo": {
     "tasks": {
       "build": {
-        "inputs": ["$TURBO_DEFAULT$", ".env*"],
-        "outputs": [".next/**", "!.next/cache/**", "!.next/dev/**"]
+        "inputs": [
+          "$TURBO_DEFAULT$",
+          ".env*"
+        ],
+        "outputs": [
+          ".next/**",
+          "!.next/cache/**",
+          "!.next/dev/**"
+        ]
       }
     }
   }
