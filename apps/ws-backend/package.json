@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --watch ./src/index.ts",
+    "dev": "bun --watch ./src/server.ts",
     "build": "tsc -b",
-    "start": "bun run ./dist/index.ts"
+    "start": "bun run ./dist/server.ts"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",
